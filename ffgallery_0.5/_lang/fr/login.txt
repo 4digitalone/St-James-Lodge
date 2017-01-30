@@ -1,0 +1,20 @@
+<div style="text-align: center; width: 400px;">
+<div style="font: 16pt Verdana, Arial, sans-serif;">ffGallery Admin</div>
+<div style="margin-bottom: 20px;">
+Vous devez vous connecter pour pouvoir éditer les titres et descriptions.
+Vous serez deconnecté et votre session sera perdu quand vous quitterez
+la page Admin ou que vous fermerez la fenètre.
+<br />
+<em>Vous n'avez pas besoin de vous déconnecter</em>
+</div>
+<form name='loginForm'>
+Nom<br />
+<input type='text' name='login_username' id='login_username'><br />
+Mot de Passe<br />
+<input type='password' name='login_password' id='login_password'><br />
+<span class='save_btn' onMouseDown='checkLogin();'>Login</span>
+</form>
+<br />
+<br />
+<br />
+</div>

@@ -1,0 +1,260 @@
+@charset "utf-8";
+body  {
+	margin: 0px;
+	padding: 5px 0px 0px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+h2 {
+	font-size: 12px;
+	margin: 0px;
+	padding: 5px;
+}
+h3 {
+	font-size: 12px;
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 14px;
+	border-bottom: 1px solid #003399;
+	width: 95%;
+	margin: 5px 0px 0px 3px;
+	padding: 0px;
+}
+
+
+
+
+
+#wrapper {
+	margin: 0px auto;
+	background: url(../images/wrapper.gif) repeat-y;
+	display: block;
+	padding: 0px;
+	width: 884px;
+}
+#wrapper #banner {
+	background: url(../images/banner.gif) no-repeat;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	height: 238px;
+}
+#wrapper #menucontent {
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+	position: relative;
+	width: 844px;
+	float: left;
+	display: inline;
+	height: 25px;
+	border-bottom: 1px solid #000000;
+}
+
+#wrapper #content  {
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+	width: 490px;
+	float: left;
+	display: inline;
+}
+#wrapper      #content    .container    {
+	margin: 0px;
+	padding: 0px 5px 0px 0px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+#wrapper #content .container p {
+	padding: 5px 0px 5px 10px;
+	margin: 0px;
+	text-align: left;
+	text-indent: 0px;
+}
+.imgleft {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+.imgright {
+	float: right;
+	margin: 0px 5px;
+	padding: 0px;
+}
+#section-marker #wrapper #banner #breadcrumbs {
+	float: right;
+	display: block;
+	width: 400px;
+	margin-right: 21px;
+	margin-top: 85px;
+	text-align: right;
+	font: 10px Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+
+#wrapper #rightcontainer {
+	margin-right: 20px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	display: block;
+	float: right;
+	padding: 0px;
+	width: 354px;
+}
+#wrapper #rightcontainer .container {
+	margin: 0px;
+	padding: 0px;
+	border-style: none;
+}
+#wrapper #rightcontainer .content p {
+	margin: 0px;
+	padding: 5px 5px 5px 10px;
+}
+
+#wrapper #footer  {
+	background: url(../images/footer.gif) no-repeat;
+	height: 65px;
+	width: 884px;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+}
+#wrapper #footer .footercontainer {
+	margin: 0px 20px;
+	padding: 5px 0px 0px;
+	font: 9px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	height: 45px;
+}
+#wrapper #footer .footercontainer ul {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+#wrapper #footer .footercontainer    li    {
+	display: inline;
+	list-style: none;
+	text-decoration: none;
+	padding: 0px 5px;
+	margin: 0px;
+	border-right: 1px solid #FFFFFF;
+}
+
+#wrapper #footer .footercontainer li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.contributions {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+.source {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+
+#wrapper   #footer .footercontainer p   {
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+}
+#wrapper #footer .footercontainer a {
+	color: #FFFFFF;
+}
+
+
+.quotes {
+	margin: 10px 0px;
+	padding: 0px;
+	display: block;
+	text-align: center;
+}
+/*#section-marker .marker a {
+	background: #A34E07;
+	text-decoration: none;
+}*/
+#topnav, #topnav  ul {
+	list-style: none;
+}
+#topnav li {
+	float: left;
+	height: 20px;
+	position: relative;
+	margin-right: 1em;
+	width: 100px;
+}
+#topnav  ul  {
+	position: absolute;
+	background: #00FF66;
+}
+* html #topnav a {
+	width: 100%;
+}
+
+#topnav ul li {
+	float: none;
+}
+
+#topnav  li:hover  ul #topnav li.sfhover ul {
+	display: block;
+}
+#topnav a:link, #topnav a:visited {
+	display: block;
+}
+
+#thumbnails {
+	list-style: none;
+	clear: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px 0px 0px 5px;
+	padding: 0px;
+}
+#section-marker #wrapper #content .container #thumbnails h3 {
+	margin: 0px;
+	padding-top: 10px;
+}
+
+
+#thumbnails ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#section-marker #wrapper #content .container #thumbnails p {
+	margin: 0px;
+	padding: 5px 0px 5px 5px;
+}
+
+
+#thumbnails li {
+	float: left;
+	margin: 10px 0px 0px;
+	padding: 0px;
+}
+#thumbnails img {
+	display: block;
+	border-style: none;
+}
+#gallery ul {
+	list-style: none;
+	position: relative;
+	margin: 0px 0px 10px;
+	padding: 10px 0px 0px;
+}
+#section-marker #wrapper #content .container #gallery {
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+}
+
+#gallery li {
+	float: left;
+	display: block;
+	margin: 0px 0px 0px 5px;
+	padding: 0px 5px;
+	border-right: 1px solid #000000;
+}

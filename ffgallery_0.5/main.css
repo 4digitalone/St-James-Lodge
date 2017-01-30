@@ -1,0 +1,243 @@
+/* 
+  VERSION 0.3
+*/
+body {
+	font: 12pt Verdana, Arial, sans-serif;
+	background-color: black;
+	color: white;
+}
+
+a {
+	font: 10pt Verdana, Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+div.main {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-left: 15%;
+	padding-top: 100px;
+}
+
+img.imgSmall {
+	border: 2px solid white;
+	margin-left: 4px;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	filter:alpha(opacity=60);
+	opacity: 0.60;
+	cursor: pointer;
+}
+
+table.main_tbl {
+	border: 0px;
+	text-align:center;
+}
+
+td.title_block {
+	font: 16pt Verdana, Arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	height: 25px;
+}
+
+div.overlay {
+	position: absolute;
+	top: 150px;
+	left: 32%;
+	width: 396px;
+	height: 400px;
+	background-color: black;
+	text-align: center;
+}
+
+table.pic_tbl {
+	border: 0px;
+	visibility: hidden;
+}
+
+td.album_lst {
+	font: 8pt Verdana, Arial, sans-serif;
+	width: 150px;
+}
+
+div.album {
+	font: 12pt Verdana, Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+	padding: 5px 0px 5px 0px;
+	cursor: pointer;
+}
+
+div.album:hover {
+	font: 12pt Verdana, Arial, sans-serif;
+	color: #B0B0B0;
+	text-decoration: none;
+}
+
+td.img_td {
+	text-align: center;
+	width: 132px;
+	height: 137px;
+}
+
+td.navigate {
+	font: 10pt Verdana, Arial, sans-serif;
+	text-align: center;
+}
+
+td.navigate img {
+	border: 0px;
+}
+
+td.about {
+	text-align: right;
+	font-weight: bold;
+}
+
+span.pageList {
+	font: 10pt Verdana, Arial, sans-serif;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0px 5px 0px 5px;
+	cursor: pointer;
+}
+
+div.aboutLink {
+	font: 10pt Verdana, Arial, sans-serif;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div.close {
+	font: 10pt Verdana, Arial, sans-serif;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div.zoom {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-left: 30%;
+	padding-top: 7%;
+	visibility: hidden;
+}
+
+table.z_tbl {
+	background-color: #303030;
+	border: 0px;
+}
+
+td.z_td_tr {
+	font: 10pt Verdana, Arial, sans-serif;
+	background-color: black;
+	padding: 5px 5px 5px 5px;
+	border: 0px;
+	width: 150px;
+}
+
+div.img_title {
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+div.z_full {
+	text-align: right;
+}
+
+div.z_full a {
+	font: 10pt Verdana, Arial, sans-serif;
+	color: white;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+td.z_td {
+	font: 10pt Verdana, Arial, sans-serif;
+	background-color: black;
+	padding: 5px 5px 5px 5px;
+	border: 0px;
+	text-align: right;
+}
+
+td.z_td img {
+	border: 10px solid white;
+}
+
+div.about {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-left: 35%;
+	padding-top: 7%;
+	width: 50%;
+	visibility: hidden;
+}
+
+table.a_tbl {
+	background-color: #303030;
+	border: 0px;
+}
+
+td.a_td {
+	font: 10pt Verdana, Arial, sans-serif;
+	background-color: black;
+	padding: 5px 5px 5px 5px;
+	border: 0px;
+}
+
+td.a_td img{
+	float: left;
+	margin: 5px 10px 5px 10px;
+}
+
+td.a_td_au {
+	font: 8pt Verdana, Arial, sans-serif;
+	text-align: center;
+	background-color: black;
+	padding: 5px 5px 5px 5px;
+	border: 0px;
+}
+
+td.a_td_au a {
+	font: 10pt Verdana, Arial, sans-serif;
+	color: white;
+	text-decoration: underline;
+}
+
+span.link {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#overlay_f img{
+	border: none;
+	position : absolute;
+ }
+
+#overlay_f{ 
+	background-image: url(overlay.png); 
+	display : none;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	z-index: 500;
+ 	width : 100%;
+}
+
+* html #overlay_f{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}

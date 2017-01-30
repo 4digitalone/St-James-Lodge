@@ -1,0 +1,113 @@
+/* 
+  -----------------------------------
+  TabBar Magic Style Sheet
+  by Project Seven Development
+  www.projectseven.com
+   Style Theme:03 - Aurora
+  -----------------------------------
+*/
+#p7TBM {
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+#p7TBMroot {
+	font-size: 1em;
+	background-color: #FEFEFE;
+	background-image: url(img/aurora_menutile.jpg);
+	background-repeat: repeat-x;
+	border-top: 1px solid #D6DDE0;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #7C8C92;
+	border-left: 1px solid #FFFFFF;
+}
+#p7TBMrootbox {}
+#p7TBMroot img {
+	border: 0;
+}
+#p7TBMroot ul {
+	margin: 0;
+  padding: 0;
+}
+#p7TBMroot li {
+	list-style-type: none;
+	display: inline;
+}
+#p7TBMroot li a {
+	float: left;
+}
+#p7TBMroot .p7TBMtext li a {
+	color: #465464;
+	padding: 8px 10px;
+	text-decoration: none;
+}
+#p7TBMroot .p7TBMtext .p7TBMdown, #p7TBMroot .p7TBMtext .p7TBMdown:hover {
+	color: #FFFFFF!important;
+	background-color: #7C8C92!important;
+}
+/*
+The Root Level Hover. This also locks the Hover state while 
+the root item's associated sub-menu is visible.
+DO NOT CHANGE SELECTOR NAMES*/
+.p7ie6Fix:active, 
+#p7TBMroot .p7TBMtext .p7TBMon,
+#p7TBMroot .p7TBMtext li a:focus, 
+#p7TBMroot .p7TBMtext li a:active {
+	color: #6A7A80;
+	background-color: #E2E7EA;
+}
+#p7TBMsubwrap{
+	font-size: .8em;
+	position: relative;
+	height: auto;
+}
+.p7TBMsub {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	visibility:hidden;
+}
+.p7TBMsubbox {
+}
+.p7TBMsub ul {
+	margin: 0;
+	padding: 0;
+	background-image: url(img/iebfix.gif);
+	background-color: transparent;
+	border: 0;
+}
+.p7TBMsub li {
+	list-style-type: none;
+	display: inline;
+}
+.p7TBMsub li a {
+	background-image: url(img/iebfix.gif);
+	color: #465464;
+	display: block;
+	float: left;
+	padding: 6px 8px 12px 8px;
+}
+.p7ie6Fix:active,
+.p7TBMsub li a:hover,
+.p7TBMsub li a:active,
+.p7TBMsub li a:focus {
+	color: #FFFFFF;
+	background-image: url(img/aurora_menutile.jpg);
+	background-repeat: no-repeat;
+}
+#p7TBM br {
+	clear: both;
+	height: 0;
+	line-height: 0.0;
+	font-size: 1px;
+}
+
+/* current marker style */
+.p7TBMsub .p7TBMmark,
+.p7TBMsub .p7TBMmark:hover,
+.p7TBMsub .p7TBMmark:active,
+.p7TBMsub .p7TBMmark:focus {
+	background-image: none;
+	color: #333333 !important;
+	font-weight:bold;
+	cursor: default;
+}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<album>
+
+<albumName>Lodge Pictures</albumName>
+
+<albumItemCount>1</albumItemCount>
+
+<albumCaption></albumCaption>
+
+<images>
+
+<image>
+
+	<isFirstImage>
+
+		true
+
+	</isFirstImage>
+
+	
+
+	
+
+	
+
+	<isPrevImage>
+
+		false
+
+	</isPrevImage>
+
+	<prevImage />
+
+	
+
+	<isLastImage>
+
+		true
+
+	</isLastImage>
+
+	
+
+	
+
+	
+
+	<isNextImage>
+
+		false
+
+	</isNextImage>
+
+	
+
+
+
+
+
+	<firstImage>
+
+		Lodge Pictures/images/dsc00834.jpg
+
+	</firstImage>
+
+	<itemLargeImage>
+
+		Lodge Pictures/images/dsc00834.jpg
+
+	</itemLargeImage>	
+
+	<nextImage>
+
+		
+
+	</nextImage>
+
+	<nextThumbnail>
+
+		
+
+	</nextThumbnail>
+
+	<prevImage>
+
+		
+
+	</prevImage>
+
+	<prevThumbnail>
+
+		
+
+	</prevThumbnail>
+
+	<lastImage>
+
+		Lodge Pictures/images/dsc00834.jpg
+
+	</lastImage>
+
+	<lastThumbnail>
+
+		Lodge Pictures/thumbnails/dsc00834.jpg
+
+	</lastThumbnail>
+
+
+
+	<itemWidth>
+
+		480
+
+	</itemWidth>
+
+
+
+	<itemHeight>
+
+		640
+
+	</itemHeight>
+
+
+
+	<itemThumbnailImage>
+
+		Lodge Pictures/thumbnails/dsc00834.jpg
+
+	</itemThumbnailImage>
+
+
+
+	<itemThumbnailWidth>
+
+		70
+
+	</itemThumbnailWidth>
+
+
+
+	<itemThumbnailHeight>
+
+		90
+
+	</itemThumbnailHeight>
+
+
+
+	<itemName>
+
+		dsc00834.jpg
+
+	</itemName>
+
+
+
+	<itemNumber>
+
+		134
+
+	</itemNumber>
+
+
+
+	<itemOriginalPath>
+
+		c:\documents and settings\david johnson\my documents\lodge pictures\dsc00834.jpg
+
+	</itemOriginalPath>
+
+
+
+
+
+	<itemNameOnly>
+
+		itemNameOnly UNDEFINED (9)
+
+	</itemNameOnly>
+
+	
+
+	<itemCaption>
+
+		dsc00834.jpg
+
+	</itemCaption>
+
+
+
+	<itemSize>
+
+		itemSize UNDEFINED (9)
+
+	</itemSize>
+
+</image>
+
+</images>
+
+</album>

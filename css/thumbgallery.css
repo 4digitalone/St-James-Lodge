@@ -1,0 +1,17 @@
+@charset "utf-8";
+#thumbgallery {
+	display: block;
+	float: left;
+	list-style: none;
+}
+#thumbgallery   li {
+	float: left;
+	background: #009900;
+	width: 150px;
+}
+#thumbgallery img {
+	display: block;
+	text-decoration: none;
+	border-style: none;
+	border-width: 0px;
+}

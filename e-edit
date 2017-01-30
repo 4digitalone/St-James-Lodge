@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="generator" content="HTML Tidy for Cygwin (vers 1st September 2004), see www.w3.org" />
+
+	<title></title>
+	<link rel="test" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+</head>
+		
+<body>
+	<style type="text/css" media="screen">
+	background-color: #DDD;
+	color: #CCC;
+</style>
+	<div id="wrapper">
+		<div id="content">
+			<h1 id="tis_is_word">tis is word</h1>
+			<p>ldfddfd
+				dff
+				dfdfdfdfdffd</p>
+			<p>this is another tab</p>
+			<h3 id="ther_dofe">ther dofe</h3>
+			
+		</div>
+	</div>
+
+</body>
+</html>
+
+	

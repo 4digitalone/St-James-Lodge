@@ -1,0 +1,113 @@
+/* 
+  -----------------------------------
+  TabBar Magic Style Sheet
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme:01 - Basic
+  -----------------------------------
+*/
+#p7TBM {
+	font-family:Arial, Helvetica, sans-serif;
+}
+#p7TBMroot {
+	background-color: #FFFFFF;
+	border: 1px solid #333333;
+	font-size: 1em;
+}
+#p7TBMrootbox {}
+
+#p7TBMroot img {
+	border: 0;
+}
+#p7TBMroot ul {
+	margin: 0;
+  padding: 0;
+}
+#p7TBMroot li {
+	list-style-type: none;
+	display: inline;
+}
+#p7TBMroot li a {
+	float: left;
+}
+#p7TBMroot .p7TBMtext li a {
+	color: #666666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border-right: 1px solid #333333;
+}
+#p7TBMroot .p7TBMtext .p7TBMdown, #p7TBMroot .p7TBMtext .p7TBMdown:hover {
+	color: #CCCCCC!important;
+	background-color: #333333!important;
+}
+/*
+The Root Level Hover. This also locks the Hover state while 
+the root item's associated sub-menu is visible.
+DO NOT CHANGE SELECTOR NAMES*/
+.p7ie6Fix:active, 
+#p7TBMroot .p7TBMtext .p7TBMon,
+#p7TBMroot .p7TBMtext li a:focus, 
+#p7TBMroot .p7TBMtext li a:active {
+	color: #333333;
+	background-color: #ECE9D8;
+}
+#p7TBMsubwrap{
+	font-size: .8em;
+	position: relative;
+	height: auto;
+}
+.p7TBMsub {
+	position: absolute;
+	visibility:hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.p7TBMsubbox {
+	padding: 8px 0 0 0;
+}
+/*
+SUBMENU BAACKGROUNDS and BORDERS HERE*/
+.p7TBMsub ul {
+	margin: 0;
+	padding: 0;
+	background-image: url(img/iebfix.gif);
+	background-color: transparent;
+	border: 0;
+}
+.p7TBMsub li {
+	list-style-type: none;
+	display: inline;
+}
+.p7TBMsub li a {
+	color: #333333;
+	padding: 6px;
+	display: block;
+	float: left;
+	border: 1px solid #FFFFFF;
+}
+.p7TBMsub li a:hover,
+.p7TBMsub li a:active,
+.p7TBMsub li a:focus {
+	color: #333333;
+	background-color: #ECE9D8;
+	border-color: #333333;
+	text-decoration: none;
+}
+#p7TBM br {
+	clear: both;
+	height: 0;
+	line-height: 0.0;
+	font-size: 1px;
+}
+
+/* current marker style */
+.p7TBMsub .p7TBMmark,
+.p7TBMsub .p7TBMmark:hover,
+.p7TBMsub .p7TBMmark:active,
+.p7TBMsub .p7TBMmark:focus {
+	font-weight:bold;
+	color: #333333;
+	cursor: default;
+	text-decoration: underline;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Stu Nicholls | CSSplay | Validating drop down cross-browser menu</title>
+<meta name="Author" content="Stu Nicholls" />
+
+<style type="text/css">
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/dd_valid_2.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+.menu {font-family: arial, sans-serif; width:749px; height:30px; position:relative; margin:0; font-size:11px; margin:20px 0 60px 0; background:#fff; position:relative; z-index:100;}
+.menu ul {padding:0; margin:0; list-style-type: none;}
+
+.menu ul li {float:left; border-left:1px solid #eee; width:106px;}
+.menu ul         li      a,.menu    ul      li      a:visited    {
+	display:block;
+	width:101px;
+	text-decoration:none;
+	padding:0 0 0 5px;
+	height:30px;
+	line-height:30px;
+	color:#000;
+	background:#c9c9a7 url(images/striangle.gif);
+}
+
+.menu table {border-collapse:collapse; margin:0; padding:0; font-size:1em;}
+
+.menu ul li ul {visibility:hidden; position:absolute; top:30px; left:0; }
+#boxes/*#boxes    li  {
+	display:block;
+	width:101px;
+	text-decoration:none;
+	padding:0 0 0 5px;
+	height:30px;
+	line-height:30px;
+	color:#000;
+	background:#c9c9a7 url(images/striangle.gif) no-repeat right bottom;
+}*/
+  {
+	background:#c9c9a7 url(images/striangle.gif) no-repeat right bottom;
+}
+
+
+.menu ul li:hover a,
+.menu ul li a:hover {color:#fff; background:#b3ab79;}
+
+.menu ul li:hover ul,
+.menu ul li a:hover ul {visibility:visible; width:749px;background:#b3ab79; color:#fff;}
+
+.menu ul li:hover ul.right_side li,
+.menu ul li a:hover ul.right_side li {float:right; border:0; border-left:1px solid #eee;}
+
+.menu ul li:hover ul.left_side li,
+.menu ul li a:hover ul.left_side li {float:left; border:0; border-left:1px solid #eee;}
+
+.menu ul li:hover ul li a.sub,
+.menu ul li a:hover ul li a.sub {background:#bd8d5e url(../../graphics/drop2.gif) bottom right no-repeat; color:#fff;}
+
+.menu ul li:hover ul li ul,
+.menu ul li a:hover ul li a ul {visibility:hidden; position:absolute; left:0; top:30px; }
+
+.menu ul li:hover ul li a,
+.menu ul li a:hover ul li a {display:block; background:#b3ab79; color:#fff;}
+
+.menu ul li:hover ul li a:hover,
+.menu ul li a:hover ul li a:hover {background:#dfc184; color:#000;}
+
+.menu ul li:hover ul li:hover ul,
+.menu ul li a:hover ul li a:hover ul {visibility:visible; color:#000; background:#dfc184;}
+
+.menu ul li:hover ul.right li {float:right;}
+
+.menu ul li:hover ul li:hover ul li a,
+.menu ul li a:hover ul li a:hover ul li a {background:#dfc184; color:#000;}
+
+.menu ul li:hover ul li:hover ul li a:hover,
+.menu ul li a:hover ul li a:hover ul li a:hover {background:#bd8d5e; color:#fff;}
+</style>
+
+</head>
+
+<body id="www-cssplay-co-uk">
+	<div id="wrapper">
+	
+<h2>A cross-browser drop-line cascading validating menu</h2>
+<h3>15th March 2006</h3>
+<h3>Revised 5th January 2007</h3>
+
+<div class="menu">
+
+<ul>
+<li><a href="../menu/index.html">DEMOS<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+		<li><a href="../menu/zero_dollars.html" title="The zero dollar ads page">zero dollars</a></li>
+		<li><a href="../menu/embed.html" title="Wrapping text around images">wrapping text</a></li>
+		<li><a href="../menu/form.html" title="Styling forms">styled form</a></li>
+		<li><a href="../menu/nodots.html" title="Removing active/focus borders">active focus</a></li>
+		<li><a class="sub" href="../menu/hover_click.html" title="Hover/click with no active/focus borders">HOVER/CLICK<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul class="right_side">
+				<li><a href="../menu/form.html" title="Styling forms">styled form</a></li>
+				<li><a href="../menu/nodots.html" title="Removing active/focus borders">active focus</a></li>
+				<li><a href="../menu/hover_click.html" title="Hover/click with no active/focus borders">hover/click</a></li>
+			</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+		<li><a href="../menu/shadow_boxing.html" title="Multi-position drop shadow">shadow boxing</a></li>
+		<li><a href="../menu/old_master.html" title="Image Map for detailed information">image map</a></li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="index.html">MENUS<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+		<li><a href="spies.html" title="a coded list of spies">spies menu</a></li>
+		<li><a href="vertical.html" title="a horizontal vertical menu">vertical menu</a></li>
+		<li><a href="expand.html" title="an enlarging unordered list">enlarging list</a></li>
+		<li><a href="enlarge.html" title="an unordered list with link images">link images</a></li>
+		<li><a href="cross.html" title="non-rectangular links">non-rectangular</a></li>
+		<li><a href="jigsaw.html" title="jigsaw links">jigsaw links</a></li>
+		<li><a href="circles.html" title="circular links">circular links</a></li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="../layouts/index.html">LAYOUTS<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+		<li><a href="../layouts/bodyfix.html" title="Cross browser fixed layout">Fixed 1</a></li>
+		<li><a href="../layouts/body2.html" title="Cross browser fixed layout">Fixed 2</a></li>
+		<li><a href="../layouts/body4.html" title="Cross browser fixed layout">Fixed 3</a></li>
+		<li><a href="../layouts/body5.html" title="Cross browser fixed layout">Fixed 4</a></li>
+		<li><a href="../layouts/minimum.html" title="A simple minimum width layout">minimum width</a></li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="../boxes/index.html">BOXES<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+		<li><a href="spies.html" title="a coded list of spies">spies menu</a></li>
+		<li><a href="vertical.html" title="a horizontal vertical menu">vertical menu</a></li>
+		<li><a href="expand.html" title="an enlarging unordered list">enlarging list</a></li>
+		<li><a href="enlarge.html" title="an unordered list with link images">link images</a></li>
+		<li><a href="cross.html" title="non-rectangular links">non-rectangular</a></li>
+		<li><a href="jigsaw.html" title="jigsaw links">jigsaw links</a></li>
+		<li><a href="circles.html" title="circular links">circular links</a></li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="../mozilla/index.html">MOZILLA<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+		<li><a href="../mozilla/dropdown.html" title="A drop down menu">drop down menu</a></li>
+		<li><a href="../mozilla/cascade.html" title="A cascading menu">cascading menu</a></li>
+		<li><a href="../mozilla/content.html" title="Using content:">content:</a></li>
+		<li><a href="../mozilla/moxbox.html" title=":hover applied to a div">mozzie box</a></li>
+		<li><a href="../mozilla/rainbow.html" title="I can build a rainbow">rainbow box</a></li>
+		<li><a href="../mozilla/snooker.html" title="Snooker cue">snooker cue</a></li>
+		<li><a href="../mozilla/target.html" title="Target Practise">target practise</a></li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="../ie/index.html">EXPLORER<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul class="right_side">
+		<li><a href="../ie/exampleone.html" title="Example one">example one</a></li>
+		<li><a href="../ie/weft.html" title="Weft fonts">weft fonts</a></li>
+		<li><a href="../ie/exampletwo.html" title="Vertical align">vertical align</a></li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="../opacity/index.html">OPACITY<!--[if IE 7]><!--></a><!--<![endif]-->
+	<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul class="right_side">
+		<li><a href="../opacity/colours.html" title="colour wheel">opaque colours</a></li>
+		<li><a href="../opacity/picturemenu.html" title="a menu using opacity">opaque menu</a></li>
+		<li><a href="../opacity/png.html" title="partial opacity">partial opacity</a></li>
+		<li><a href="../opacity/png2.html" title="partial opacity II">partial opacity II</a></li>
+		<li><a class="sub" href="../menu/hover_click.html" title="Hover/click with no active/focus borders">HOVER/CLICK<!--[if IE 7]><!--></a><!--<![endif]-->
+			<!--[if lte IE 6]><table><tr><td><![endif]-->
+			<ul class="left_side">
+				<li><a href="../menu/form.html" title="Styling forms">styled form</a></li>
+				<li><a href="../menu/nodots.html" title="Removing active/focus borders">active focus</a></li>
+				<li><a href="../menu/hover_click.html" title="Hover/click with no active/focus borders">hover/click</a></li>
+			</ul>
+			<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+		</li>
+	</ul>
+	<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+</ul>
+
+</div>
+
+
+    </div>
+	<!-- end of info -->
+<div id="info_right">
+</div>
+<br class="clear" />
+</div> <!-- end of showcase -->
+<div id="content">
+
+<div id="left_column">
+<h3>Information</h3>
+
+<p>Yet another method of styling the cross-browser drop-down menu.</p>
+<p>This time the drop-down is a horizontal line of links that further cscades to another horizontal line.</p>
+<p>Most useful when you only have a few items in each cascade and do not want to encroach too much onto the area below the menu.</p>
+<p>The xhtml is still the same as for the previous drop-down and flly-out menus and all that has changed is the styling.</p>
+
+<p>I hope that you like this one. I think that it is a little different from most drop-down menus and deserves it's place as the ONLY CSS drop line cascading menu on the internet.</p> 
+
+<p class="date">5th January</p>
+<p>I have decided to bring this one up to date with my latest techniques. The (x)html has been revised to do away with the double entry top level list items making it easier to understandand better for screen readers.</p>
+<p>The two separate stylesheets have been combined into one which has been placed in the page head to make it easier to understand and simpler to find and download.</p>
+
+<p>This works in the latest issues of all modern browsers and can be made to work in IE5.5 with a few hacks to correct the box model error.</p>
+
+
+<h3>Copyright</h3><p>Because of all the time and effort spent in producing this demonstration I would ask that you respect my copyright.</p><p>1. If you are using this on a personal web site then please add a link back to <b class="css">CSS</b><span class="play">play</span> and retain any copyright comment in the stylesheet.<br /><span class="red">A donation to the '<a href="../support.html">Support <b class="css">CSS</b><span class="play">play</span></a>' fund would be appreciated.</span></p><p>2. If you are using this on a commercial web site, or as a paying job for a client, then please email me asking for permission - stu{at}cssplay.co.uk <span class="red">and in this case a donation to the '<a href="../support.html">Support <b class="css">CSS</b><span class="play">play</span></a>' fund is required.</span></p><p>3. If you are having problems integrating any of my demonstrations into your website then I now offer a service to fault find and correct any errors that you may have introduced. Please email me for more information.</p>
+<br />
+</div>
+
+
+<!-- end of right column -->
+</div>
+<!-- end of content -->
+<div id="foot">
+		<p>&copy; 2005/6/7/8 Stu Nicholls - All rights reserved</p>
+		<ul>
+		<li><a href="http://www.icra.org/sitelabel/">ICRA checked site</a></li>
+		<li><a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0 Strict!">xhtml 1.0 Strict</a></li>
+		<li><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.cssplay.co.uk/menus/dd_valid2.html" title="Valid CSS!">css 1/2/3</a></li>
+		</ul>
+		</div>
+	</div> <!-- end of wrapper -->
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-451410-1";
+urchinTracker();
+</script>
+</body>
+</html>

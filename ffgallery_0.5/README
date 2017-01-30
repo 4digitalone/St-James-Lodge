@@ -1,0 +1,64 @@
+REQUIREMENTS
+ffGallery requires:
+- a webserver running PHP 4.3 or higher
+- GD2 extension for PHP
+
+INSTALLATION
+To install ffGallery simply unzip the files to a directory on your web server and modify config.php and main.css to suit your fancy.  Then, create directories below the one containing index.php for each of your galleries.
+Each gallery folder should contain:
+- all the full size images you wish to display
+- thumbnails are now generated automatically by ffGallery based on the sizes given in config.php (look there for more info)
+Each gallery folder may contain:
+- an .ini file containing image and gallery names and descriptions (see example.ini)
+- and .ini file will be automatically created when in admin mode when you edit any image titles or descriptions.  See the ADMIN section below
+
+The folder called '_extras' holds text files with data that will be displayed at the begining of the album list.  The files are referenced by name (e.g. home.txt is referenced in the $EXTRA_PAGES array in config.php as 'home') and can contain text and HTML code.
+
+The '_inc' folder holds important files needed for ffGallery to run.
+
+The '_lang' folder holds language files (see the README there for more information)
+
+As you may have guessed putting and underscore ('_') before a folder name causes ffGallery to ignore it.
+
+UPGRADING
+To upgrade from a previous version delete everything in your ffGallery folder except:
+- don't delete 'config.php', instead rename it to something like 'config.php_OLD'
+- don't delete 'main.css', instead rename it to something like 'main.css_OLD'
+- your image directories
+- the '_extra' directory
+Unzip the new ffGallery into the directory and edit the 'config.php' file to match your old one and look to see if anything new needs to be changed.  Also edit the main.css to match your old one.  Once this is done you can delete config.php_OLD and main.css_OLD.
+Visit your ffGallery location with you favorite web browser.  It may load slowly the first time as the thumbnail files are created for your existing galleries.  If it times out just reload until you see the main page.
+You may now want to go into your existing image directories and delete the sub-directories containing the thumbnail used in the older version.
+
+USAGE
+You can link directly to a gallery or page using the following:
+http://www.example.com/ffGallery/?gallery=my_gallery?page=page_num
+You can link dircectly to a zoomed image using:
+http://www.example.com/ffGallery/?gallery=my_gallery?page=page_num?img=img_num
+(fill in correct website and ffGallery location information as needed)
+You can imbed ffGallery in an HTML iframe like this if you are using a CMS templated layout.  You'll prabably need to play with main.css to get things to fit right.
+<iframe align=center src=http://www.example.com/ffGallery/  frameBorder=0 scrolling=no width=1024 height=800></iframe>
+
+ADMIN
+To access the admin features load the 'admin.php' file (e.g. http://www.example.com/ffGallery/admin.php).  From here you will be able to browse your albums but will need to login to be able to edit any image titles or descriptions.  Use the username and password you supplied in 'config.php' to login.
+Editing an images title and description changes those values in the .ini files in each image directory.  If there is no .ini file a new one is created with the album name as the file name (example 'galaxies.ini' for the 'galaxies' album).  A conflict may arise if there are multiple .ini files in a directory with the last read one overwriting the values of the previous.
+
+Copyright (c) 2006 Aaron Kehrer
+All rights reserved.
+Please see the LICENSE file for more information.
+ffGallery is released under the BSD license.
+
+CHANGES
+Changes from 0.4:
+- option to display full sized image in layer on page
+
+Changes from 0.3:
+- images sorted by filename
+- sajax modified to work with Opera
+
+Changes from 0.21:
+- automatic thumbnail creation
+- admin access for image title and description changes
+- separated javascript into files
+- consolidated functions into _inc folder
+- languages now in sub-folders (_lang/en)

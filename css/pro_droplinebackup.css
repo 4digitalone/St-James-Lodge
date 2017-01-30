@@ -1,0 +1,152 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/pro_dropline.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.nav {
+	height:25px;
+	background: #A38F07;
+	position:relative;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	width:842px;
+	z-index:500;
+	margin-left: 21px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000000;
+}
+
+.nav .table {
+	display:table;
+	margin:0;
+}
+
+.nav .select,
+.nav .current {
+	list-style:none;
+	display:table-cell;
+	white-space:nowrap;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nav li {
+	margin:0;
+	padding:0;
+	height:auto;
+	float:left;
+}
+
+.nav .select a {
+	height:25px;
+	float:left;
+	padding:0 30px;
+	text-decoration:none;
+	line-height:25px;
+	color:#000000;
+	display: block;
+	white-space: nowrap;
+}
+
+/*.nav .current a {
+	display:block;
+	height:20px;
+	float:left;
+	padding:0 0 0 15px;
+	text-decoration:none;
+	line-height:20px;
+	white-space:nowrap;
+	color:#fff;
+}
+*/
+
+/*.nav .current a b {
+	display:block;
+	padding:0 30px 0 15px;
+}
+*/
+.nav .select a:hover, 
+.nav .select li:hover a {
+	padding:0 0 0 15px;
+	cursor:pointer;
+	color:#fff;
+	background: #A34E07;
+}
+
+.nav .select a:hover b, 
+.nav .select li:hover a b {
+	display:block;
+	float:left;
+	padding:0 30px 0 15px;
+	cursor:pointer;
+}
+
+.nav .select_sub {
+display:none;
+}
+
+/* IE6 only */
+.nav table {
+border-collapse:collapse; 
+margin:-1px; 
+font-size:10px; 
+width:0; 
+height:0;
+}
+
+.nav .sub {
+display:table; 
+margin:0 auto; 
+padding:0; 
+list-style:none;
+}
+
+/*.nav .sub_active .current_sub a, 
+.nav .sub_active a:hover {
+background:transparent; 
+color:#f00;
+}
+*/
+.nav .select :hover .select_sub, 
+.nav .current .show {
+	display:block;
+	position:absolute;
+	width:842px;
+	top:20px;
+	padding:0;
+	z-index:100;
+	left:0;
+	text-align:center;
+}
+
+/*.nav .current .show {
+z-index:10;
+}
+*/
+.nav .select :hover .sub li a, 
+.nav .current .show .sub li a {
+	display:block;
+	float:left;
+	background:#A34F07;
+	padding:0 10px;
+	margin:0;
+	white-space:nowrap;
+	color:#FFFFFF;
+}
+
+/*.nav .current .sub li.sub_show a {
+	color:#088;
+	cursor:default;
+}
+*/
+.nav .select :hover .sub li a:hover, 
+.nav .current .sub li a:hover {
+	visibility:visible;
+	color:#000000;
+	background:#A38F07;
+}

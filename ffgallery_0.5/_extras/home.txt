@@ -1,0 +1,7 @@
+Welcome<br />
+You can navigate through the galleries on the left.  Each gallery with display a group of images that you can click on to see a larger version.
+<br />
+You can navigate through the various pages in each gallery below and the <b>'?'</b> will give you a little information about the photographer.
+<br />
+<br />
+-Enjoy

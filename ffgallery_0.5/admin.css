@@ -1,0 +1,17 @@
+/* 
+  VERSION 0.3
+*/
+span.save_btn {
+	background-color: #E7E7E7;
+	color: #373737;
+	font-weight: bold;
+	margin: 5px 0px 0px 0px;
+	padding: 2px 5px 2px 5px;
+	border: 3px solid #373737;
+	float: right;
+	cursor: pointer;
+}
+
+span.help {
+	text-align: center;
+}

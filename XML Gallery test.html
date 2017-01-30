@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var ds1 = new Spry.Data.XMLDataSet("christmas2005/index.xml", "album/images/image");
+ds1.setColumnType("itemLargeImage", "image");
+ds1.setColumnType("itemThumbnailImage", "image");
+//-->
+</script>
+
+</head>
+
+<body>
+<div spry:region="ds1">
+  <ul spry:repeatchildren="ds1">
+    <li><a href="{ds1::itemLargeImage}" rel="lightbox"><img src="{itemThumbnailImage}"/></a></li>
+  </ul>
+</div>
+</body>
+</html>

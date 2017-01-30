@@ -1,0 +1,20 @@
+<div style="text-align: center; width: 400px;">
+<div style="font: 16pt Verdana, Arial, sans-serif;">ffGallery Admin</div>
+<div style="margin-bottom: 20px;">
+You need to log in to be able to edit image titles and descriptions.
+You will be logged out and your session will be destroyed when you leave
+the Admin page or close the browser window.
+<br />
+<em>You do not need to log out</em>
+</div>
+<form name='loginForm'>
+Username<br />
+<input type='text' name='login_username' id='login_username'><br />
+Password<br />
+<input type='password' name='login_password' id='login_password'><br />
+<span class='save_btn' onMouseDown='checkLogin();'>Login</span>
+</form>
+<br />
+<br />
+<br />
+</div>
